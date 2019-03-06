@@ -1,0 +1,54 @@
+#topBar {
+  background-color: $secondary_color;
+  padding: 0.25rem 0;
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      width: 8rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        font-size: 1.125rem;
+        color: $color_1;
+        opacity: 0.5;
+        transition: trans(opacity);
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: $color_1;
+      opacity: 0.5;
+      font-size: 0.875rem;
+      transition: trans(opacity);
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .fa-user {
+      font-size: 1.25rem;
+      transition: trans(all);
+    }
+  }
+}

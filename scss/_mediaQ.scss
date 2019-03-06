@@ -1,0 +1,392 @@
+@media screen and (max-width: 1200px) {
+  #main-header {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  #products {
+
+    .grid-container {
+      padding: 0 3rem;
+    }
+
+    #products-tabs {
+      height: 20rem;
+      padding-left: 1.5rem;
+
+      .tabs-title {
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .urun__wrapper {
+      grid-gap: 2rem;
+      grid-template-columns: repeat(2, minmax(18.75rem, 1fr));
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #topBar {
+
+    .social-icons {
+      justify-content: flex-start;
+    }
+
+    .menu {
+      justify-content: flex-end;
+    }
+  }
+
+  #main-header {
+    padding: 0;
+
+    .top-bar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top-bar-left {
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar-right {
+      margin: 0;
+      padding: 0;
+      width: 90%;
+      justify-content: space-evenly;
+
+      .sepet-icon {
+        width: 3rem;
+      }
+
+      .menu {
+        width: 100%;
+        justify-content: center;
+
+        a {
+          margin-left: 4rem;
+        }
+
+        .menu-text {
+
+          a {
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #products {
+
+    .grid-container {
+      padding: 0 3rem;
+    }
+
+    #products-tabs {
+      height: 20rem;
+      padding-left: 1.5rem;
+
+      .tabs-title {
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .urun__wrapper {
+      grid-template-columns: repeat(2, minmax(15rem, 1fr));
+
+      .urun__content {
+        p {
+          margin-bottom: 1.5rem;
+        }
+
+        .urun__content__price {
+
+          .price {
+            font-size: 2.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #topBar {
+    background-color: $primary_color;
+  }
+
+  #main-header {
+    transition: trans(all);
+
+    .top-bar-right {
+      .menu {
+        a {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .menu-icon {
+    width: 25px;
+    height: 20px;
+
+    &::after {
+      height: 3px;
+    }
+  }
+
+  #products {
+
+    .grid-container {
+      padding: 0 2rem !important;
+    }
+
+    #products-tabs {
+      height: 20rem;
+      padding-left: 1rem !important;
+
+      .tabs-title {
+        a {
+          font-size: 1.3rem !important;
+        }
+      }
+    }
+
+    .grid-container {
+      padding: 0 3rem;
+    }
+
+    #products-tabs {
+      height: 20rem;
+      padding-left: 1.5rem;
+
+      .tabs-title {
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .urun__wrapper {
+      grid-template-columns: repeat(1, minmax(100%, 1fr));
+
+      .urun__item {
+        padding: 1rem 1.5rem;
+        flex-direction: row;
+      }
+
+      .urun__image {
+        width: 18rem;
+        padding: 0 0 1rem;
+        margin-bottom: 0;
+      }
+
+      .urun__content {
+        margin-left: 2rem;
+        margin-top: 1rem;
+
+        h4 {
+          margin-bottom: 0.3rem;
+        }
+
+        p {
+          margin-bottom: 1rem;
+        }
+
+        .urun__content__price {
+          align-self: flex-start;
+        }
+      }
+
+      .urun__add {
+        margin-top: 0;
+        margin-left: 1rem;
+
+        a {
+          text-decoration: none;
+          padding: 0;
+          margin: 0;
+
+          &:hover .fas {
+            color: $secondary_color;
+            opacity: 1;
+          }
+
+          .fas {
+            font-size: 3rem;
+            color: $color_3;
+            opacity: 0.3;
+            transition: trans(all);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #topBar {
+    .social-icons {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .menu {
+      justify-content: center;
+      margin-top: 1rem;
+
+      a:hover .fa-user {
+        background-color: $color_1;
+        color: $primary_color;
+      }
+
+      .fa-user {
+        width: 3.5rem;
+        height: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+        border: 1px solid $color_1;
+        border-radius: 50%;
+        margin-top: 0.3rem;
+      }
+    }
+  }
+
+  #main-header {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+    .top-bar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top-bar-right {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .sepet-icon {
+        width: 3rem;
+        margin: 1.8rem 0 0 0;
+      }
+
+      .menu {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  #products {
+
+    .grid-container {
+      padding: 0 1rem !important;
+    }
+
+    #products-tabs {
+      height: auto !important;
+      padding-left: 0 !important;
+      display: grid;
+      grid-gap: 0;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      border-left: none;
+      margin-bottom: 2rem !important;
+      border-bottom: 2px solid $secondary_color;
+
+      .tabs-title {
+        a {
+          font-size: 1.2rem !important;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    .urun__wrapper {
+      grid-template-columns: 100%;
+
+      .urun__item {
+        width: 100%;
+        padding: 2rem 1rem 1.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center !important;
+      }
+
+      .urun__image {
+        width: 100%;
+        padding: 0 0 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .urun__content {
+        margin: 0;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h4 {
+          margin-bottom: 0.3rem;
+        }
+
+        p {
+          margin-bottom: 1.5rem;
+        }
+
+        .urun__content__price {
+          align-self: flex-end;
+        }
+      }
+
+      .urun__add {
+        margin: 0;
+        margin-top: 2rem;
+
+        a {
+          text-decoration: none;
+          padding: 0;
+          margin: 0;
+
+          &:hover .fas {
+            color: $secondary_color;
+            opacity: 1;
+          }
+
+          .fas {
+            font-size: 3rem;
+            color: $color_3;
+            opacity: 0.3;
+            transition: trans(all);
+          }
+        }
+      }
+    }
+  }
+}
