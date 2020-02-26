@@ -226,3 +226,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 clearBtn.addEventListener('click', clearCard);
+
+window.addEventListener('click', function (e) {
+  console.log(e.target.className);
+  e.stopPropagation();
+  if (e.target.id != 'card' && e.target.className != 'sepet__count' && e.target.className != 'cart__item' && e.target.className != 'cart-total-container' && e.target.className != 'clear-cart' && e.target.className != 'cart-buttons-container' && e.target.className != 'fas fa-trash') {
+    cart.classList.remove('show')
+  }
+})
